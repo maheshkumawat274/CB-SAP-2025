@@ -18,7 +18,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How much is the scholarship worth?",
-    answer: "The scholarship amount is up to ₹10,000.",
+    answer: "The scholarship amount is up to ₹20,000.",
   },
   {
     question: "Do I need to apply separately for the scholarship?",
@@ -59,7 +59,7 @@ const FAQSection: React.FC = () => {
 
   return (
     <div className="max-w-2xl sm:max-w-5xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+      <h2 className="text-3xl text-gray-700 font-bold text-center mb-6">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <motion.div

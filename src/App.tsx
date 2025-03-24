@@ -6,7 +6,7 @@ import Section3 from "./components/Section3"
 import TestimonialSlider from "./components/Section4"
 import ApplyBtn from "./components/Applybtn"
 import FAQSection from "./components/Section5"
-// import Process from "./components/Section1"
+import Process from "./components/Section1"
 
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
     <>
      <Home ref={firstComponentRef}/>
      <Section/>
-     {/* <Process/> */}
+     <Process/>
      <Section2/>
      <Section3/>
      <div className="flex items-center justify-center overflow-hidden">

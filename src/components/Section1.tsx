@@ -1,35 +1,41 @@
 
 const steps = [
   {
-    title: "Register Yourself",
-    description: "Create an account by providing your basic details.",
-    icon: "📝",
-    gradient: "bg-gradient-to-r from-pink-500 to-orange-500",
-  },
-  {
-    title: "Verify Email",
-    description: "Check your inbox and verify your email address.",
-    icon: "📧",
-    gradient: "bg-gradient-to-r from-orange-500 to-yellow-500",
-  },
-  {
-    title: "Fill Application Form Online",
-    description: "Complete the online application form with necessary details.",
-    icon: "🖊️",
-    gradient: "bg-gradient-to-r from-yellow-500 to-green-500",
-  },
-  {
-    title: "Pay Application Fee",
-    description: "Make payment for the application process securely.",
-    icon: "💳",
+    title: "Scholarship Guidance",
+    description: "Get expert guidance on scholarship opportunities.",
+    icon: "🎓",
     gradient: "bg-gradient-to-r from-green-500 to-blue-500",
   },
   {
-    title: "Submit Application",
-    description: "After completing all steps, submit your application successfully.",
-    icon: "📤",
+    title: "Admission Assistance",
+    description: "Receive help with your college admission process.",
+    icon: "🏫",
     gradient: "bg-gradient-to-r from-blue-500 to-indigo-500",
   },
+  {
+    title: "College Selection",
+    description: "Find the best college based on your preferences and eligibility.",
+    icon: "🏛️",
+    gradient: "bg-gradient-to-r from-indigo-500 to-purple-500",
+  },
+  {
+    title: "Education Loan Assistance",
+    description: "Help in securing an education loan for your studies.",
+    icon: "🏦",
+    gradient: "bg-gradient-to-r from-pink-500 to-orange-500",
+  },
+  {
+    title: "Form Filling Guidance",
+    description: "Step-by-step guidance for completing your application.",
+    icon: "📝",
+    gradient: "bg-gradient-to-r from-orange-500 to-yellow-500",
+  },
+  {
+    title: "Career Counseling",
+    description: "Get expert advice on choosing the right career path.",
+    icon: "💼",
+    gradient: "bg-gradient-to-r from-yellow-500 to-green-500",
+  }
 ];
 
 const Process = () => {
@@ -38,7 +44,7 @@ const Process = () => {
       <h1 className="text-center font-poppins mb-6 text-2xl sm:text-4xl font-bold text-gray-700">
       STEPS TO FOLLOW
       </h1>
-    <div className="flex flex-col items-center md:flex-row md:justify-center md:items-start gap-8 p-6">
+    <div className="flex flex-col items-center md:flex-row md:justify-center gap-8 p-6">
       {steps.map((step, index) => (
         <div key={index} className="relative flex flex-col items-center md:flex-1">
           {/* Gradient Circle with Icon */}

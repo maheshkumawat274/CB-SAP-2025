@@ -194,7 +194,7 @@ const handleClick = (url: string) => {
   return (
     <div className=" font-poppins px-4 sm:px-14">
   {/* 🔹 Section Heading */}
-  <h1 className="text-2xl sm:text-3xl font-bold text-center text-black pt-14">
+  <h1 className="text-2xl sm:text-3xl font-bold text-center text-gray-700 pt-14">
      <MdSchool className="inline-block text-primaryBtn text-5xl mr-2" />
      CareerBanao Scholarship Admission Program 2025
 </h1>
@@ -204,12 +204,6 @@ const handleClick = (url: string) => {
     {/* 🔹 Search Section */}
     <h1 className="text-lg md:text-xl font-bold text-purple-700">
   Unlock Your Future with CareerBanao
-</h1>
-<h1 className="text-lg md:text-xl font-bold text-blue-600">
-  CareerBanao Scholarship Admission Program 2025
-</h1>
-<h1 className="text-lg md:text-xl font-bold text-purple-700">
-  Scholarships & Admissions Made Easy
 </h1>
 <h1 className="text-lg md:text-xl font-semibold text-pink-500">
   "Achieve More with the Right Support!"
@@ -230,7 +224,7 @@ const handleClick = (url: string) => {
       placeholder="Search by College Name or Location..."
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
-      className="mt-4 p-2 w-full md:w-1/2 border rounded-md shadow-sm focus:ring focus:ring-purple-300"
+      className="mt-4 p-2 w-full md:w-1/2 text-sm border rounded-md shadow-sm focus:ring focus:ring-purple-300"
     />
   </div>
 
