@@ -11,7 +11,7 @@ const Section = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className=" text-2xl sm:text-2xl lg:text-4xl font-bold text-purple-700 leading-tight text-center">
-          CareerBanao Scholarship Admission Program 2025 (CB - SAP 2025)
+          CareerBanao Scholarship Admission Program 2025 (CB-SAP 2025)
         </h1>
         <h2 className="text-xl font-semibold text-blue-600">Top Scholarship-Based Admissions in Delhi NCR</h2>
         <p className="text-black text-lg">
