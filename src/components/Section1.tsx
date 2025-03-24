@@ -42,7 +42,7 @@ const Process = () => {
   return (
     <div className="mt-10">
       <h1 className="text-center font-poppins mb-6 text-2xl sm:text-4xl font-bold text-gray-700">
-      STEPS TO FOLLOW
+      How CB-SAP 2025 Helps You?
       </h1>
     <div className="flex flex-col items-center md:flex-row md:justify-center gap-8 p-6">
       {steps.map((step, index) => (
