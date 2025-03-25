@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Home from "./components/home"
 import Section from "./components/Section"
 import Section2 from "./components/Section2"
@@ -7,6 +7,7 @@ import TestimonialSlider from "./components/Section4"
 import ApplyBtn from "./components/Applybtn"
 import FAQSection from "./components/Section5"
 import Process from "./components/Section1"
+import Loader from "./components/Loader"
 
 
 const App = () => {
@@ -17,20 +18,51 @@ const App = () => {
       firstComponentRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const images = document.querySelectorAll("img");
+    let loadedCount = 0;
+
+    images.forEach((img) => {
+      if (img.complete) {
+        loadedCount++;
+      } else {
+        img.onload = () => {
+          loadedCount++;
+          if (loadedCount === images.length) {
+            setLoading(false);
+          }
+        };
+      }
+    });
+
+    if (images.length === 0) {
+      setLoading(false);
+    }
+  }, []);
   return (
     <>
-     <Home ref={firstComponentRef}/>
-     <Section/>
-     <Process/>
-     <Section2/>
-     <Section3/>
-     <div className="flex items-center justify-center overflow-hidden">
-      <TestimonialSlider />
-    </div>
-    <div className="mb-14">
-    <FAQSection/>
-    </div>
-    <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
+     
+    {loading ? (
+        <Loader />
+      ) : (
+        <div>
+          <Home ref={firstComponentRef}/>
+          <Section/>
+          <Process/>
+          <Section2/>
+          <Section3/>
+          <div className="flex items-center justify-center overflow-hidden">
+           <TestimonialSlider />
+         </div>
+         <div className="mb-14">
+         <FAQSection/>
+         <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
+         </div>
+        </div>
+      )}
     </>
   )
 }

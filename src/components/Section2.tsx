@@ -200,7 +200,7 @@ const handleClick = (url: string) => {
 </h1>
 
 {/* 🔹 Search Section */}
-<div className="text-center p-6">
+<div className="text-center p-2">
     {/* 🔹 Search Section */}
     <h1 className="text-lg md:text-xl font-bold text-purple-700">
   Unlock Your Future with CareerBanao
