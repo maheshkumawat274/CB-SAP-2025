@@ -59,8 +59,9 @@ const App = () => {
          </div>
          <div className="mb-14">
          <FAQSection/>
-         <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
+         
          </div>
+         <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
         </div>
       )}
     </>
